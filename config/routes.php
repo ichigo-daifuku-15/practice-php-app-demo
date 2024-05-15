@@ -62,6 +62,7 @@ return function (RouteBuilder $routes): void {
          */
         $builder->connect('/pages/*', 'Pages::display');
         $builder->connect('/hello', ['controller' => 'Hello', 'action' => 'index']); // 新しいルートの追加
+        $builder->connect('/articles', ['controller' => 'Articles', 'action' => 'index']);
         /*
          * Connect catchall routes for all controllers.
          *
